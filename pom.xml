@@ -40,15 +40,15 @@
 
 
     <distributionManagement>
-        <!--  Publish versioned releases here  -->
         <repository>
-            <id>nexus-release</id>
-            <url>${nexus.url.release}</url>
+            <id>github-apiee</id>
+            <name>GitHub Domstolene Apiee</name>
+            <url>https://maven.pkg.github.com/domstolene/apiee</url>
         </repository>
-        <!--  Publish snapshots here  -->
         <snapshotRepository>
-            <id>nexus-snapshot</id>
-            <url>${nexus.url.snapshot}</url>
+            <id>github-apiee</id>
+            <name>GitHub Domstolene Apiee</name>
+            <url>https://maven.pkg.github.com/domstolene/apiee</url>
         </snapshotRepository>
     </distributionManagement>
 
