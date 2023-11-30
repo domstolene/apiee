@@ -24,7 +24,7 @@ jobs:
       - name: Write settings.xml
         uses: whelk-io/maven-settings-xml-action@v14
         with:
-          servers: '[{"id": "github-apiee","username": "lovisa-jira","password": "${{secrets.CR_PAT}}"}]'
+          servers: '[{"id": "github-apiee","username": "${{github.actor}}","password": "${{secrets.GITHUB_TOKEN}}"}]'
           repositories: '[{"id": "github-apiee","url": "https://maven.pkg.github.com/domstolene/apiee"},{"id": "central","url": "https://repo1.maven.org/maven2","releases": {"enabled":"true"},"snapshots": {"enabled": "true"}},{"id": "jboss","url": "https://repository.jboss.org/nexus/content/groups/public/","releases": {"enabled": "true"},"snapshots": {"enabled": "true"}}]'
           plugin_repositories: '[{"id": "redhat","url": "https://maven.repository.redhat.com/ga"}]'
 
